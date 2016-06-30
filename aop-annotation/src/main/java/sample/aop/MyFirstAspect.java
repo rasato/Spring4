@@ -17,7 +17,7 @@ import sample.aop.business.domain.Product;
 @Component
 public class MyFirstAspect {
 
-    @Before("execution(* findByProductName(String))")
+    @Before("execution(* findProduct(String))")
     public void before(JoinPoint jp) {
         // メソッド開始時にWeavingするAdvice
         System.out.println("Hello Before! *** メソッドが呼ばれる前に出てくるよ!");

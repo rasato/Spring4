@@ -20,7 +20,7 @@ public class ProductSampleRun {
 
 		productService.addProduct(new Product("ホチキス", 100));
 
-		Product product = productService.findByProductName("ホチキス");
+		Product product = productService.findProduct("ホチキス");
 		System.out.println(product);
 	}
 }

@@ -15,7 +15,7 @@ public class ProductServiceImpl implements ProductService {
 
 	}
 
-	public Product findByProductName(String name) {
+	public Product findProduct(String name) {
 		 return productDao.findByProductName(name);
 	}
 }
